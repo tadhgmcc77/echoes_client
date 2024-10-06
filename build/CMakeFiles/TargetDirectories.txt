@@ -1,0 +1,3 @@
+/Users/ryanlacey/Documents/GitHub/echoes_client/build/CMakeFiles/ECHOES_CLIENT.dir
+/Users/ryanlacey/Documents/GitHub/echoes_client/build/CMakeFiles/edit_cache.dir
+/Users/ryanlacey/Documents/GitHub/echoes_client/build/CMakeFiles/rebuild_cache.dir
