@@ -19,7 +19,7 @@ int main()
     std::getline(std::cin, name); // read in user input and store to the var name
 
     std::cout << "Enter  email: ";
-    std::cin.ignore(); // ignore any newline chars from the previous input
+    // std::cin.ignore(); // ignore any newline chars from the previous input
     std::getline(std::cin, email);
 
     // Parse input into JSON
