@@ -1,6 +1,7 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 #include <string>
+#include "chat_client.h"
 
 // for convenience
 using json = nlohmann::json;
@@ -25,6 +26,12 @@ int main()
     // Parse input into JSON
     userInfo["name"] = name;
     userInfo["email"] = email;
+
+    // creation of ChatClient class + print details
+    ChatClient user;
+    user.name = userInfo["name"];
+    user.email = userInfo["email"];
+    user.getDetails();
 
     // Print the JSON
     std::cout << "JSON: \n";
