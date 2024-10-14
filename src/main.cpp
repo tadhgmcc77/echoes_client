@@ -13,24 +13,30 @@ int main()
 
     // init vars
     std::string name;
-    std::string email;
+    std::string text;
 
     // Take user input
     std::cout << "Enter name: ";
     std::getline(std::cin, name); // read in user input and store to the var name
 
-    std::cout << "Enter email: ";
+    std::cout << "Enter message: ";
     // std::cin.ignore(); // ignore any newline chars from the previous input
-    std::getline(std::cin, email);
+    std::getline(std::cin, text);
 
     // Parse input into JSON
     userInfo["name"] = name;
-    userInfo["email"] = email;
+    userInfo["text"] = text;
 
     // creation of ChatClient class + print details
     ChatClient user;
     user.details = userInfo;
-    user.getDetails();
+
+    // connect to test server
+    user.connect("127.0.0.1", "18080");
+
+    std::string message = R"({"name": ")" + name + R"(", "text": ")" + text + R"("})";
+
+    user.sendMessage(message);
 
     return 0;
 }
