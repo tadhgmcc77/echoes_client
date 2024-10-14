@@ -12,12 +12,11 @@ using namespace std;
 class ChatClient
 {
 public:
-    string name;
-    string email;
+    json details;
 
     void getDetails()
     {
-        cout << "Username: " << name << endl;
-        cout << "Email: " << email << endl;
+        cout << "Username: " << details["name"] << endl;
+        cout << "Email: " << details["email"] << endl;
     }
 };

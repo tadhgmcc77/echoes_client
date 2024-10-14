@@ -19,7 +19,7 @@ int main()
     std::cout << "Enter name: ";
     std::getline(std::cin, name); // read in user input and store to the var name
 
-    std::cout << "Enter  email: ";
+    std::cout << "Enter email: ";
     // std::cin.ignore(); // ignore any newline chars from the previous input
     std::getline(std::cin, email);
 
@@ -29,13 +29,8 @@ int main()
 
     // creation of ChatClient class + print details
     ChatClient user;
-    user.name = userInfo["name"];
-    user.email = userInfo["email"];
+    user.details = userInfo;
     user.getDetails();
-
-    // Print the JSON
-    std::cout << "JSON: \n";
-    std::cout << userInfo.dump(4) << std::endl;
 
     return 0;
 }
