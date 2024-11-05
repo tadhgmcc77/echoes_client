@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.4/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.3/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.30.4/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ryanlacey/Documents/GitHub/echoes_client
+CMAKE_SOURCE_DIR = /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ryanlacey/Documents/GitHub/echoes_client/build
+CMAKE_BINARY_DIR = /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ECHOES_CLIENT.dir/depend.make
@@ -70,31 +70,46 @@ include CMakeFiles/ECHOES_CLIENT.dir/progress.make
 include CMakeFiles/ECHOES_CLIENT.dir/flags.make
 
 CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o: CMakeFiles/ECHOES_CLIENT.dir/flags.make
-CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o: /Users/ryanlacey/Documents/GitHub/echoes_client/src/main.cpp
+CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o: /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/src/main.cpp
 CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o: CMakeFiles/ECHOES_CLIENT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanlacey/Documents/GitHub/echoes_client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o -MF CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o.d -o CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o -c /Users/ryanlacey/Documents/GitHub/echoes_client/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o -MF CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o.d -o CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o -c /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/src/main.cpp
 
 CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanlacey/Documents/GitHub/echoes_client/src/main.cpp > CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/src/main.cpp > CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.i
 
 CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanlacey/Documents/GitHub/echoes_client/src/main.cpp -o CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/src/main.cpp -o CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.s
+
+CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o: CMakeFiles/ECHOES_CLIENT.dir/flags.make
+CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o: /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/src/http_request.cpp
+CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o: CMakeFiles/ECHOES_CLIENT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o -MF CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o.d -o CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o -c /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/src/http_request.cpp
+
+CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/src/http_request.cpp > CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.i
+
+CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/src/http_request.cpp -o CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.s
 
 # Object files for target ECHOES_CLIENT
 ECHOES_CLIENT_OBJECTS = \
-"CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o"
+"CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o" \
+"CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o"
 
 # External object files for target ECHOES_CLIENT
 ECHOES_CLIENT_EXTERNAL_OBJECTS =
 
 ECHOES_CLIENT: CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o
+ECHOES_CLIENT: CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o
 ECHOES_CLIENT: CMakeFiles/ECHOES_CLIENT.dir/build.make
-ECHOES_CLIENT: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/lib/libcurl.tbd
 ECHOES_CLIENT: CMakeFiles/ECHOES_CLIENT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ryanlacey/Documents/GitHub/echoes_client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ECHOES_CLIENT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ECHOES_CLIENT"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ECHOES_CLIENT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -106,6 +121,6 @@ CMakeFiles/ECHOES_CLIENT.dir/clean:
 .PHONY : CMakeFiles/ECHOES_CLIENT.dir/clean
 
 CMakeFiles/ECHOES_CLIENT.dir/depend:
-	cd /Users/ryanlacey/Documents/GitHub/echoes_client/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ryanlacey/Documents/GitHub/echoes_client /Users/ryanlacey/Documents/GitHub/echoes_client /Users/ryanlacey/Documents/GitHub/echoes_client/build /Users/ryanlacey/Documents/GitHub/echoes_client/build /Users/ryanlacey/Documents/GitHub/echoes_client/build/CMakeFiles/ECHOES_CLIENT.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build/CMakeFiles/ECHOES_CLIENT.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ECHOES_CLIENT.dir/depend
 

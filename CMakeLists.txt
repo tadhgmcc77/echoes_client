@@ -15,18 +15,13 @@ endif()
 
 
 find_package(CURL REQUIRED)
-find_package(nlohmann_json REQUIRED)
-find_package(Boost REQUIRED COMPONENTS system filesystem)
 
 
 
-add_executable(ECHOES_CLIENT src/main.cpp)
+add_executable(ECHOES_CLIENT src/main.cpp src/http_request.cpp)
 
 
 
 target_link_libraries(ECHOES_CLIENT
     PRIVATE
-    CURL::libcurl
-    nlohmann_json::nlohmann_json
-    Boost::system
 )

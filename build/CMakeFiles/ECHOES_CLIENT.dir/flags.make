@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /usr/local/include
+CXX_INCLUDES = 
 
-CXX_FLAGS = -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6
+CXX_FLAGS = -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk
 

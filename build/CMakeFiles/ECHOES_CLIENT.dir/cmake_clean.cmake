@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o"
+  "CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o.d"
   "CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o"
   "CMakeFiles/ECHOES_CLIENT.dir/src/main.cpp.o.d"
   "ECHOES_CLIENT"

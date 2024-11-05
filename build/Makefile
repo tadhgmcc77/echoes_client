@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.4/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.3/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.30.4/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ryanlacey/Documents/GitHub/echoes_client
+CMAKE_SOURCE_DIR = /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ryanlacey/Documents/GitHub/echoes_client/build
+CMAKE_BINARY_DIR = /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/ryanlacey/Documents/GitHub/echoes_client/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.30.4/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.30.3/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.30.4/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.30.3/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryanlacey/Documents/GitHub/echoes_client/build/CMakeFiles /Users/ryanlacey/Documents/GitHub/echoes_client/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build/CMakeFiles /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryanlacey/Documents/GitHub/echoes_client/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryanlacey/Documents/Personal/GitHubPersonal/echoes_client/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ ECHOES_CLIENT/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECHOES_CLIENT.dir/build.make CMakeFiles/ECHOES_CLIENT.dir/build
 .PHONY : ECHOES_CLIENT/fast
 
+src/http_request.o: src/http_request.cpp.o
+.PHONY : src/http_request.o
+
+# target to build an object file
+src/http_request.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECHOES_CLIENT.dir/build.make CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.o
+.PHONY : src/http_request.cpp.o
+
+src/http_request.i: src/http_request.cpp.i
+.PHONY : src/http_request.i
+
+# target to preprocess a source file
+src/http_request.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECHOES_CLIENT.dir/build.make CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.i
+.PHONY : src/http_request.cpp.i
+
+src/http_request.s: src/http_request.cpp.s
+.PHONY : src/http_request.s
+
+# target to generate assembly for a file
+src/http_request.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ECHOES_CLIENT.dir/build.make CMakeFiles/ECHOES_CLIENT.dir/src/http_request.cpp.s
+.PHONY : src/http_request.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ECHOES_CLIENT"
+	@echo "... src/http_request.o"
+	@echo "... src/http_request.i"
+	@echo "... src/http_request.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
